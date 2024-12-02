@@ -2,27 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My First Test Page</title>
+    <title>New Leapa Test Project</title>
     <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
+        }
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--primary-color);
+            background-color: var(--background-color);
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #f4f4f4;
         }
-        h1 {
-            color: #333;
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            padding: 30px;
+            margin-top: 20px;
+        }
+        .header {
+            text-align: center;
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .project-description {
+            background-color: #f9f9f9;
+            border-left: 5px solid var(--secondary-color);
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .feature {
+            background-color: #f1f1f1;
+            padding: 15px;
+            border-radius: 5px;
             text-align: center;
         }
-        p {
-            line-height: 1.6;
-            color: #666;
+        .feature-icon {
+            font-size: 2em;
+            color: var(--secondary-color);
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Test Page</h1>
-    <p>This is a simple HTML page created as part of a GitHub workflow test.</p>
+    <div class="container">
+        <div class="header">
+            <h1>New Leapa Test Project</h1>
+        </div>
+        
+        <div class="project-description">
+            <h2>Project Overview</h2>
+            <p>This is an experimental project demonstrating a comprehensive web development workflow. Created entirely by an AI assistant, it showcases automated repository management, HTML design, and responsive web development techniques.</p>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">🚀</div>
+                <h3>Automated Creation</h3>
+                <p>Entire repository setup handled by AI</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">💻</div>
+                <h3>Web Development</h3>
+                <p>Modern HTML5 and CSS3 techniques</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🤖</div>
+                <h3>AI Assisted</h3>
+                <p>Created using Claude by Anthropic</p>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">🔧</div>
+                <h3>GitHub Workflow</h3>
+                <p>Demonstrates repository management</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
